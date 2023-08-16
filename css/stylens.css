@@ -28,9 +28,13 @@ p {
     font-family:var(--primary-font)
 }
 .container {
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+}
+.cont {
+    display: flex;
+    align-items: center;
 }
 /* header */
 /* logo */
@@ -46,7 +50,29 @@ p {
     color: #000000;
 }
 /* nav */
+.nav {
+   display: flex; 
+   align-items: center;
+}
+
+.nav-list {
+    display: flex;
+}
+.nav-list .nav-list-item + .nav-list-item {
+    margin-left: 50px;
+} 
+
+.nav-contact {
+    display:flex;
+}
+.nav-contact .contact-item + .contact-item {
+    margin-left: 40px;
+}
 .nav-list-studio {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-color);
     font-size: 14px;
     font-weight: 500;
@@ -61,6 +87,10 @@ p {
     color: var(--accent-color);
 }
 .nav-list-portfolio {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-color);
     font-size: 14px;
     font-weight: 500;
@@ -72,6 +102,10 @@ p {
     color: var(--accent-color);
 }
 .nav-list-contacts {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px; 
+
     color: var(--primary-color);
     font-size: 14px;
     font-weight: 500;
@@ -310,7 +344,12 @@ margin-bottom: 10;
     color: var(--accent-color);
 }
 .filter-list {
+    display:flex;
     margin-bottom: 56px;
+    justify-content:center;
+}
+.filter-list .filter + .filter {
+    margin-left: 8px;
 }
 .filter-btn {
     padding: 6px 22px;
